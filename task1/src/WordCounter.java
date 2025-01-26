@@ -43,7 +43,8 @@ public class WordCounter {
             List<Map.Entry<String, Integer>> entryList = new ArrayList<>(data.entrySet());
             entryList.sort(Map.Entry.<String, Integer>comparingByValue().reversed());
             for (Map.Entry<String, Integer> entry : entryList) {
-                String line = String.format("%s,%d,%.2f\n", entry.getKey(), entry.getValue(), ((double)  entry.getValue() / totalWordCount * 100));
+                float percentage = (float) entry.getValue() / totalWordCount * 100;
+                String line = String.format("%s,%d,%.2f\n", entry.getKey(), entry.getValue(), percentage);
                 writer.write(line);
             }
         } catch (IOException exc) {
