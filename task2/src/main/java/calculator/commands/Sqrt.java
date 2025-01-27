@@ -12,6 +12,7 @@ public class Sqrt implements Command {
         } else {
             float a = context.pop();
             if (a < 0) {
+                context.push(a);
                 throw new IllegalArgumentException("Cannot square a negative number");
             }
             context.push((float) Math.sqrt(a));
