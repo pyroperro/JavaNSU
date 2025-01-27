@@ -15,7 +15,7 @@ public class Divide implements Command {
             if (b == 0f) {
                 context.push(b);
                 context.push(a);
-                throw new IllegalArgumentException("Connot divide by zero");
+                throw new IllegalArgumentException("Cannot divide by zero");
             }
             context.push(a / b);
         }

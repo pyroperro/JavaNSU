@@ -6,7 +6,7 @@ public class Define implements Command {
     @Override
     public void execute(Context context, String[] args) {
         if (args.length != 2) {
-            throw new IllegalArgumentException("calculator.commands.Define takes two arguments");
+            throw new IllegalArgumentException("Define takes two arguments");
         }
 
         String varName = args[0];

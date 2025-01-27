@@ -6,7 +6,7 @@ public class Push implements Command {
     @Override
     public void execute(Context context, String[] args) {
         if (args.length != 1) {
-            throw new IllegalArgumentException("calculator.commands.Push takes one argument");
+            throw new IllegalArgumentException("Push takes one argument");
         }
 
         String argument = args[0];
