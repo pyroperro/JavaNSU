@@ -1,6 +1,6 @@
 package calculator;
 
-import java.calculator.commands.Command;
+import calculator.commands.Command;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

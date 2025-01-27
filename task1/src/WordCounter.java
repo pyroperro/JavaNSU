@@ -10,6 +10,7 @@ public class WordCounter {
 
     public void readData(String filePath) {
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            data.clear();
             int character;
             StringBuilder word = new StringBuilder();
             while ((character = reader.read()) != -1) {

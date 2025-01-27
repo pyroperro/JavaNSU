@@ -4,7 +4,7 @@ import calculator.Context;
 
 import java.util.NoSuchElementException;
 
-class Multiply implements Command {
+public class Multiply implements Command {
     @Override
     public void execute(Context context, String[] args) {
         if (context.stackSize() < 2) {

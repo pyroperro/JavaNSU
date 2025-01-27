@@ -4,7 +4,7 @@ import calculator.Context;
 
 import java.util.NoSuchElementException;
 
-class Pop implements Command {
+public class Pop implements Command {
     @Override
     public void execute(Context context, String[] args) {
         if (context.isEmpty()) {

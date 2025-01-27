@@ -4,7 +4,7 @@ import calculator.Context;
 
 import java.util.NoSuchElementException;
 
-class Sqrt implements Command {
+public class Sqrt implements Command {
     @Override
     public void execute(Context context, String[] args) {
         if (context.isEmpty()) {
