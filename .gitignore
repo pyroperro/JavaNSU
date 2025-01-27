@@ -2,3 +2,6 @@
 **/.idea/
 **/out/
 *.class
+*.xml
+**/target/
+**/src/java/
