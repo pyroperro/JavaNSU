@@ -13,7 +13,7 @@
 - **Наследники класса `Command`.** Классы `Add`, `Multiply`, `Push`, `Pop`, `Define` и др. реализуют интерфейс `Command` в зависимости от своего названия.
 - **Фабрика команд `CommandFactory`.** Содержит поле `Map<String, String> commandNames`--- словарь, ставящий в соответствие названия команд и имена соответствующих классов. Данный словарь заполняется конструктором, принимающим путь к файлу конфигурации. Файл преобразуется в `InputStream` поток входных данных, после чего `BufferedReader` проходит по строкам и заполняет словарь. 
 Метод `createCommand(string commandName)` создает экземпляр соответствующего класса команд по названию. Для этого объявляется объект неизвестного класса, который инициализируется нужным классом с помощью метода `forName(className)`. Далее фабрика возвращает instance класса полученный методом `newInstance()` нужного конструктора `getDeclaredConstructor()`.
-```
+```Java
 Class<?> commandClass = Class.forName(className);  
 return (Command) commandClass.getDeclaredConstructor().newInstance();
 ```
