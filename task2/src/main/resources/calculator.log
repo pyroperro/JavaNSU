@@ -1,0 +1,56 @@
+Jan 28, 2025 11:46:02 AM calculator.Calculator main
+INFO: File handler configured. Logs will be saved to "calculator.log"
+Jan 28, 2025 11:46:02 AM calculator.Calculator main
+INFO: Loaded configuration file with command mappings
+Jan 28, 2025 11:46:02 AM calculator.Calculator main
+INFO: No input file or incorrect path provided. Console input mode initialized
+Jan 28, 2025 11:46:18 AM calculator.Calculator main
+INFO: Command "DEFINE x 15" parsed
+Jan 28, 2025 11:46:18 AM calculator.Calculator main
+INFO: Command "DEFINE x 15" executed successfully
+Jan 28, 2025 11:46:21 AM calculator.Calculator main
+INFO: Command "PUSH xx" parsed
+Jan 28, 2025 11:46:21 AM calculator.Calculator main
+WARNING: Could not execute command: Uninitialized variable: xx. Command skipped
+Jan 28, 2025 11:46:24 AM calculator.Calculator main
+INFO: Command "PUSH x" parsed
+Jan 28, 2025 11:46:24 AM calculator.Calculator main
+INFO: Command "PUSH x" executed successfully
+Jan 28, 2025 11:46:26 AM calculator.Calculator main
+INFO: Command "PUSH 15" parsed
+Jan 28, 2025 11:46:26 AM calculator.Calculator main
+INFO: Command "PUSH 15" executed successfully
+Jan 28, 2025 11:46:28 AM calculator.Calculator main
+INFO: Command "*" parsed
+Jan 28, 2025 11:46:28 AM calculator.Calculator main
+INFO: Command "*" executed successfully
+Jan 28, 2025 11:46:35 AM calculator.Calculator main
+INFO: Command "PUSH -250" parsed
+Jan 28, 2025 11:46:35 AM calculator.Calculator main
+INFO: Command "PUSH -250" executed successfully
+Jan 28, 2025 11:46:36 AM calculator.Calculator main
+INFO: Command "+" parsed
+Jan 28, 2025 11:46:36 AM calculator.Calculator main
+INFO: Command "+" executed successfully
+Jan 28, 2025 11:46:37 AM calculator.Calculator main
+INFO: Command "SQRT" parsed
+Jan 28, 2025 11:46:37 AM calculator.Calculator main
+WARNING: Could not execute command: Cannot square a negative number. Command skipped
+Jan 28, 2025 11:46:39 AM calculator.Calculator main
+INFO: Command "SQRT" parsed
+Jan 28, 2025 11:46:39 AM calculator.Calculator main
+WARNING: Could not execute command: Cannot square a negative number. Command skipped
+Jan 28, 2025 11:46:44 AM calculator.Calculator main
+INFO: Command "PRINT" parsed
+Jan 28, 2025 11:46:44 AM calculator.Calculator main
+INFO: Command "PRINT" executed successfully
+Jan 28, 2025 11:46:46 AM calculator.Calculator main
+INFO: Command "POP" parsed
+Jan 28, 2025 11:46:46 AM calculator.Calculator main
+INFO: Command "POP" executed successfully
+Jan 28, 2025 11:46:48 AM calculator.Calculator main
+INFO: Command "PRINT" parsed
+Jan 28, 2025 11:46:48 AM calculator.Calculator main
+WARNING: Could not execute command: Nothing to print. Command skipped
+Jan 28, 2025 11:46:50 AM calculator.Calculator main
+WARNING: Could not execute command: Command not found: PTint. Command skipped
