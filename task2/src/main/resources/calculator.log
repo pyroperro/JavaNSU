@@ -1,0 +1,14 @@
+Jan 28, 2025 12:09:17 PM calculator.Calculator main
+INFO: File handler configured. Logs will be saved to "calculator.log"
+Jan 28, 2025 12:09:17 PM calculator.Calculator main
+INFO: Loaded configuration file with command mappings
+Jan 28, 2025 12:09:17 PM calculator.Calculator main
+INFO: No input file or incorrect path provided. Console input mode initialized
+Jan 28, 2025 12:09:25 PM calculator.Calculator main
+INFO: Command "PUSH 1" parsed
+Jan 28, 2025 12:09:25 PM calculator.Calculator main
+INFO: Command "PUSH 1" executed successfully
+Jan 28, 2025 12:09:26 PM calculator.Calculator main
+INFO: Command "PRINT" parsed
+Jan 28, 2025 12:09:26 PM calculator.Calculator main
+INFO: Command "PRINT" executed successfully
