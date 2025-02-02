@@ -17,6 +17,8 @@ public class HighscoreScreen {
             setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             setResizable(false);
 
+            setIconImage(ImageLoader.loadImage("icon.png"));
+
             HighscorePanel highscorePanel = new HighscorePanel();
             setContentPane(highscorePanel);
             pack();

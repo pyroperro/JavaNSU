@@ -15,6 +15,8 @@ public class MenuScreen {
             setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             setResizable(false);
 
+            setIconImage(ImageLoader.loadImage("icon.png"));
+
             MenuPanel menuPanel = new MenuPanel();
             setContentPane(menuPanel);
             pack();

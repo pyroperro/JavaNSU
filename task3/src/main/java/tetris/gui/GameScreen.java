@@ -29,6 +29,8 @@ public class GameScreen {
             setLocationRelativeTo(null);
             setResizable(false);
 
+            setIconImage(ImageLoader.loadImage("icon.png"));
+
             gameField = new GameField();
             gamePanel = new GamePanel(gameField);
             scoreHandler = new LeaderboardsHandler();
@@ -46,8 +48,8 @@ public class GameScreen {
                     }
                     int newDelay = Math.max(100, 500 - (gameField.getLevel() * 50));
                     gameTimer.setDelay(newDelay);
-                    gamePanel.repaint();
                 }
+                gamePanel.repaint();
             });
             gameTimer.start();
         }
@@ -118,6 +120,16 @@ public class GameScreen {
         @Override
         protected void paintComponent(Graphics g) {
             super.paintComponent(g);
+
+            if (gameField.getPause()) {
+                Image backdrop = ImageLoader.loadImage("backgrounds/pauseScreen.png");
+                g.drawImage(backdrop, 0, 0, this);
+                scoreLabel.setVisible(false);
+                levelLabel.setVisible(false);
+                return;
+            }
+            scoreLabel.setVisible(true);
+            levelLabel.setVisible(true);
 
             Image backdrop = ImageLoader.loadImage("backgrounds/gameScreen.png");
             g.drawImage(backdrop, 0, 0, this);

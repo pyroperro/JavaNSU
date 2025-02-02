@@ -6,6 +6,7 @@ Alice:11580
 Traktorist:300
 GG:240
 Vp:140
+fwa4ever:40
 0:0
 asd:0
 null:0
@@ -15,3 +16,5 @@ popo:0
 Ok:0
 loose:0
 aa:0
+1122:0
+mmmm:0

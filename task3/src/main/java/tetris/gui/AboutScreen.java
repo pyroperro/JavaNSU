@@ -14,6 +14,8 @@ public class AboutScreen {
             setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             setResizable(false);
 
+            setIconImage(ImageLoader.loadImage("icon.png"));
+
             AboutPanel aboutPanel = new AboutPanel();
             setContentPane(aboutPanel);
             pack();
