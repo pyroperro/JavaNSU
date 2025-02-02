@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class TetrominoBag {
-    private List<TetrominoType> bag;
+    private final List<TetrominoType> bag;
 
     public TetrominoBag() {
         bag = new ArrayList<>();

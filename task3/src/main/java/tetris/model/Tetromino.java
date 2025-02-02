@@ -3,35 +3,24 @@ package tetris.model;
 import java.awt.*;
 
 public class Tetromino {
-    private TetrominoType type;
+    private final TetrominoType type;
     private boolean[][] shape;
     private Point pos;
-    private boolean ghostType;
 
-    public Tetromino(TetrominoType type, Point pos, boolean isGhost) {
+    public Tetromino(TetrominoType type, Point pos) {
         this.type = type;
         this.shape = type.getShape();
         this.pos = pos;
-        this.ghostType = isGhost;
     }
 
-    public Tetromino(TetrominoType type, boolean[][] shape, Point pos, boolean ghostType) {
+    public Tetromino(TetrominoType type, boolean[][] shape, Point pos) {
         this.type = type;
         this.shape = shape;
         this.pos = pos;
-        this.ghostType = ghostType;
-    }
-
-    public Tetromino(Tetromino other) {
-        this(other.type, other.shape, other.pos, other.ghostType);
     }
 
     public boolean[][] getShape() {
         return shape;
-    }
-
-    public Color getColor() {
-        return this.type.getColor();
     }
 
     public TetrominoType getType() {
@@ -60,14 +49,6 @@ public class Tetromino {
     }
 
     public void rotateCW() {
-        this.shape = getRotatedCW();
-    }
-
-    public boolean isGhost() {
-        return ghostType;
-    }
-
-    public void setGhostType(boolean ghostType) {
-        this.ghostType = ghostType;
+        shape = getRotatedCW();
     }
 }

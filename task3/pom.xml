@@ -24,7 +24,7 @@
                     <archive>
                         <manifest>
                             <mainClass>
-                                tetris.gui.TetrisGUI
+                                tetris.Main
                             </mainClass>
                         </manifest>
                     </archive>

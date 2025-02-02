@@ -7,9 +7,9 @@ import java.awt.event.KeyEvent;
 
 public class TetrisKeyListener extends KeyAdapter {
     private final GameField gameField;
-    private final GamePanel gamePanel;
+    private final GameScreen.GamePanel gamePanel;
 
-    public TetrisKeyListener(GameField gameField, GamePanel gamePanel) {
+    public TetrisKeyListener(GameField gameField, GameScreen.GamePanel gamePanel) {
         this.gameField = gameField;
         this.gamePanel = gamePanel;
     }
@@ -24,29 +24,12 @@ public class TetrisKeyListener extends KeyAdapter {
         if (gameField.getPause()) return;
 
         switch (e.getKeyCode()) {
-            case KeyEvent.VK_A -> {
-                gameField.moveLeft();
-                break;
-            }
-            case KeyEvent.VK_D -> {
-                gameField.moveRight();
-                break;
-            }
-            case KeyEvent.VK_W -> {
-                gameField.tryRotateCW();
-                break;
-            }
-            case KeyEvent.VK_S -> {
-                gameField.moveDown();
-            }
-            case KeyEvent.VK_SPACE -> {
-                gameField.hardDrop();
-                break;
-            }
-            case KeyEvent.VK_SHIFT -> {
-                gameField.hold();
-                break;
-            }
+            case KeyEvent.VK_A -> gameField.moveLeft();
+            case KeyEvent.VK_D -> gameField.moveRight();
+            case KeyEvent.VK_W -> gameField.tryRotateCW();
+            case KeyEvent.VK_S -> gameField.moveDown();
+            case KeyEvent.VK_SPACE -> gameField.hardDrop();
+            case KeyEvent.VK_SHIFT -> gameField.hold();
         }
 
         gamePanel.repaint();

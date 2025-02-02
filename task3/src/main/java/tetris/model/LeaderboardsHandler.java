@@ -4,12 +4,12 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ScoreHandler {
+public class LeaderboardsHandler {
     private static final String SCORES_FILE = "highscores.txt";
     private static final int MAX_ENTRIES = 20;
-    private List<HighscoreEntry> scores;
+    private final List<HighscoreEntry> scores;
 
-    public ScoreHandler() {
+    public LeaderboardsHandler() {
         scores = new ArrayList<>();
         loadScores();
     }
@@ -33,7 +33,7 @@ public class ScoreHandler {
     }
 
     private void sortAndTrim() {
-        scores.sort((a,b) -> Integer.compare(b.score, a.score));
+        scores.sort((a, b) -> Integer.compare(b.score, a.score));
         if (scores.size() > MAX_ENTRIES) {
             scores.subList(MAX_ENTRIES, scores.size()).clear();
         }
@@ -64,15 +64,7 @@ public class ScoreHandler {
         return scoreStrings;
     }
 
-    public static class HighscoreEntry {
-        public final String name;
-        public final int score;
-
-        public HighscoreEntry(String name, int score) {
-            this.name = name;
-            this.score = score;
-        }
-
+    public record HighscoreEntry(String name, int score) {
         @Override
         public String toString() {
             return name + ": " + score;
