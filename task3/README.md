@@ -6,7 +6,8 @@
 1. Игра должна поддерживать таблицу рекордов.
 2. Пользователю должны быть доступны команды: Exit, About, New Game, High Scores.
 ## Архитектура
-![Tetris Gameplay](https://ibb.co/HDdSg1m4)
+![Tetris Gameplay](https://i.ibb.co/fYvg0BmF/tetris.png)
+
 Структурно программа разделяется на два подпакета: `model`, отвечающий за логику игры и `gui`, занимающийся графическим интерфейсом игры.
 ### Пакет `tetris.model`
 #### 1. `TetrominoType.java`
