@@ -7,6 +7,7 @@
 2. Пользователю должны быть доступны команды: Exit, About, New Game, High Scores.
 ## Архитектура
 Структурно программа разделяется на два подпакета: `model`, отвечающий за логику игры и `gui`, занимающийся графическим интерфейсом игры.
+
 ![Tetris Gameplay](https://i.ibb.co/fYvg0BmF/tetris.png)
 ### Пакет `tetris.model`
 #### 1. `TetrominoType.java`
