@@ -1,12 +1,16 @@
 top:103440
+1132:43920
 Lolol:37540
 Bob:24580
 Alice:11580
 112:2700
+ddddddd:2400
 Traktorist:300
 GG:240
 Vp:140
+11:140
 fwa4ever:40
+jj:40
 0:0
 asd:0
 null:0
@@ -14,7 +18,3 @@ null:0
 1121:0
 popo:0
 Ok:0
-loose:0
-aa:0
-1122:0
-mmmm:0
