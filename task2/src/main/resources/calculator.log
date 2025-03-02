@@ -1,14 +1,74 @@
-Jan 28, 2025 12:09:17 PM calculator.Calculator main
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
 INFO: File handler configured. Logs will be saved to "calculator.log"
-Jan 28, 2025 12:09:17 PM calculator.Calculator main
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
 INFO: Loaded configuration file with command mappings
-Jan 28, 2025 12:09:17 PM calculator.Calculator main
-INFO: No input file or incorrect path provided. Console input mode initialized
-Jan 28, 2025 12:09:25 PM calculator.Calculator main
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Loaded command file "commands.txt" successfully
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
 INFO: Command "PUSH 1" parsed
-Jan 28, 2025 12:09:25 PM calculator.Calculator main
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
 INFO: Command "PUSH 1" executed successfully
-Jan 28, 2025 12:09:26 PM calculator.Calculator main
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Command "PUSH 1" parsed
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Command "PUSH 1" executed successfully
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Command "PROGRESSION True 10" parsed
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Command "PROGRESSION True 10" executed successfully
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Comment line "" skipped
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Command "PUSH -1" parsed
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Command "PUSH -1" executed successfully
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Command "SQRT" parsed
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+WARNING: Could not execute command: Cannot square a negative number. Command skipped
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Command "PUSH 0" parsed
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Command "PUSH 0" executed successfully
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Command "PUSH 0" parsed
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Command "PUSH 0" executed successfully
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Command "/" parsed
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+WARNING: Could not execute command: Cannot divide by zero. Command skipped
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Command "PRINT aaaa" parsed
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Command "PRINT aaaa" executed successfully
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Command "DEFINE 1 1!" parsed
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+WARNING: Could not execute command: For input string: "1!". Command skipped
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
 INFO: Command "PRINT" parsed
-Jan 28, 2025 12:09:26 PM calculator.Calculator main
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
 INFO: Command "PRINT" executed successfully
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Command "PUSH 5" parsed
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Command "PUSH 5" executed successfully
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Command "+" parsed
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Command "+" executed successfully
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Comment line "" skipped
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Comment line "" skipped
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Comment line "# progres(isArtyth, n) --- кладет сумму прогресси (арифметической или геометрической)" skipped
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Comment line "" skipped
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Comment line "#типы исключений" skipped
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Comment line "" skipped
+Mar 02, 2025 10:08:34 PM calculator.Calculator main
+INFO: Comment line "#выход за границы" skipped

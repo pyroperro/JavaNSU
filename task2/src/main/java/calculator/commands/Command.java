@@ -1,10 +1,12 @@
 package calculator.commands;
 
 import calculator.Context;
+import calculator.exceptions.StackCalculatorException;
+
 import java.io.IOException;
 
 public interface Command {
-    abstract void execute(Context context, String[] args) throws IOException;
+    void execute(Context context, String[] args) throws StackCalculatorException;
 }
 
 

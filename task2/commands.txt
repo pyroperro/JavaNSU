@@ -1,0 +1,21 @@
+PUSH 1
+PUSH 1
+PROGRESSION True 10
+
+PUSH -1
+SQRT
+PUSH 0
+PUSH 0
+/
+PRINT aaaa
+DEFINE 1 1!
+PRINT
+PUSH 5
++
+
+
+# progres(isArtyth, n) --- кладет сумму прогресси (арифметической или геометрической)
+
+#типы исключений
+
+#выход за границы

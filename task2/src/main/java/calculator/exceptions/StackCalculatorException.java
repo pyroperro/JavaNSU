@@ -1,4 +1,7 @@
 package calculator.exceptions;
 
-public class CalculatorException {
+public class StackCalculatorException extends RuntimeException{
+    public StackCalculatorException(String message) {
+        super(message);
+    }
 }

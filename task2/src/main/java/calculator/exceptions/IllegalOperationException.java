@@ -1,4 +1,7 @@
 package calculator.exceptions;
 
-public class IllegalOperationException {
+public class IllegalOperationException extends StackCalculatorException {
+    public IllegalOperationException(String message) {
+        super(message);
+    }
 }

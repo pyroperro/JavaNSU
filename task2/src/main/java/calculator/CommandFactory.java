@@ -1,6 +1,7 @@
 package calculator;
 
 import calculator.commands.Command;
+import calculator.exceptions.UnsupportedOperatorException;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,7 +13,7 @@ import java.util.Map;
 public class CommandFactory {
     private final Map<String, String> commandNames = new HashMap<>();
 
-    public CommandFactory(String configFile) throws IOException {
+    public CommandFactory(String configFile) throws Exception {
         try (InputStream inputStream = getClass().getResourceAsStream(configFile)) {
             if (inputStream == null) {
                 throw new IOException("Config file not found");
@@ -32,9 +33,9 @@ public class CommandFactory {
     public Command createCommand(String commandName) throws Exception {
         String className = commandNames.get(commandName);
         if (className == null) {
-            throw new IllegalArgumentException("Command not found: " + commandName);
+            throw new UnsupportedOperatorException(commandName);
         }
-        Class<?> commandClass = Class.forName(className);
+            Class<?> commandClass = Class.forName(className);
         return (Command) commandClass.getDeclaredConstructor().newInstance();
     }
 }

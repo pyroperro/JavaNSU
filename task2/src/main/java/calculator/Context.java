@@ -1,5 +1,9 @@
 package calculator;
 
+import calculator.exceptions.NoSuchVariableException;
+import calculator.exceptions.StackCalculatorException;
+import calculator.exceptions.StackUnderflowException;
+
 import java.util.*;
 
 public class Context {
@@ -21,7 +25,7 @@ public class Context {
 
     public float peek() {
         if (stack.isEmpty()) {
-            throw new NoSuchElementException("Cannot peek empty stack");
+            throw new StackUnderflowException("Cannot peek empty stack");
         }
         return stack.peek();
     }
@@ -38,9 +42,9 @@ public class Context {
         varList.put(varName, value);
     }
 
-    public float findVariable(String varName) throws NoSuchElementException {
+    public float findVariable(String varName) throws StackCalculatorException {
         if (varList.get(varName) == null) {
-            throw new NoSuchElementException("Uninitialized variable: " + varName);
+            throw new NoSuchVariableException(varName);
         }
         return varList.get(varName);
     }

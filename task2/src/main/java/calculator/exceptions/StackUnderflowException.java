@@ -1,4 +1,7 @@
 package calculator.exceptions;
 
-public class StackUnderflowException {
+public class StackUnderflowException extends StackCalculatorException{
+    public StackUnderflowException(String message) {
+        super(message);
+    }
 }
